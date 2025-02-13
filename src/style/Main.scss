@@ -1,0 +1,40 @@
+.main{
+  width: 100%;
+  height: 100vh;
+  margin: 0 auto;
+  overflow: hidden;
+  background-color: $primary-color;
+  position: relative;
+  .down-icon{
+    position: absolute;
+    bottom: 7%;
+    left: 50%;
+    width: 50px;
+    transform: translateX(-50%);
+  }
+  .bg-img{
+    width: 100%;
+    height: 50%;
+    position: absolute;
+    bottom: 0;
+  }
+  .title-wrap{
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    line-height: 8rem;
+    p{
+      position: relative;
+      font-size: 200px;
+      font-family: "Outfit", 'Paperlogy-8ExtraBold';
+      font-weight: 900;
+      color: #fff;
+      letter-spacing: -0.3rem;
+      &:nth-of-type(1){
+        color: $sub-color;
+        z-index: 2;
+      }
+    }
+  }
+}

@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+@font-face {
+  font-family: 'Paperlogy-8ExtraBold';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-8ExtraBold.woff2') format('woff2');
+  // font-weight: 800;
+  font-style: normal;
+}
+
+@import "./style/global.scss";
+@import "./style/variables.scss";
+@import "./style/MenuBar.scss";
+@import "./style/Main.scss";
+@import "./style/About.scss"
+
+// <weight>: Use a value from 100 to 900
+// <uniquifier>: Use a unique and descriptive class name
+// html {
+//   font-family: "Outfit", serif;
+//   font-optical-sizing: auto;
+//   font-weight: 900;
+//   font-style: normal;
+// }

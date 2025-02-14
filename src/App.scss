@@ -1,16 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css");
 @font-face {
-  font-family: 'Paperlogy-8ExtraBold';
-  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-8ExtraBold.woff2') format('woff2');
-  // font-weight: 800;
+  font-family: 'Pretendard-Regular';
+  src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+  // font-weight: 400;
   font-style: normal;
 }
 
-@import "./style/global.scss";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+
 @import "./style/variables.scss";
+@import "./style/global.scss";
+@import "./style/ScrollTop.scss";
 @import "./style/MenuBar.scss";
 @import "./style/Main.scss";
-@import "./style/About.scss"
+@import "./style/About.scss";
+@import "./style/Project.scss";
+@import "./style/ProjectContents.scss";
+@import "./style/Design.scss";
 
 // <weight>: Use a value from 100 to 900
 // <uniquifier>: Use a unique and descriptive class name

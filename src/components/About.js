@@ -17,6 +17,10 @@ const About = () => {
           <h3>SKILLS</h3>
           <div className="skills-icon">
             <img src="https://placehold.co/90"/>
+            <img src="https://placehold.co/90"/>
+            <img src="https://placehold.co/90"/>
+            <img src="https://placehold.co/90"/>
+            <img src="https://placehold.co/90"/>
           </div>
         </div>
       </div>

@@ -4,24 +4,50 @@
   margin: 0 auto;
   overflow: hidden;
   .about-wrap{
-    width: 80%;
+    width: 70%;
     margin: 60px auto;
-    h2{
-      font-family: "Outfit", 'Paperlogy-8ExtraBold';
-      font-size: 96px;
-      font-weight: 900;
-      color: $primary-color;
-    }
     .about-me{
-      width: 90%;
-      margin: 0 auto;
+      // width: 90%;
+      margin: 30px auto;
       display: flex;
+      justify-content: center;
+      align-items: start;
       gap: 2rem;
-      font-family: 'Paperlogy-8ExtraBold';
-      font-weight: 400;
+      font-family: $font-kor;
       .about-txt{
-        h5{
-          font-size: $font-size-large;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        hr{
+          width: 10rem;
+          height: 5px;
+          background-color: $primary-color;
+          border: none;
+        }
+        p{
+          font-size: $font-size-small;
+          &:nth-of-type(2){
+            font-size: $font-size-medium;
+            margin-top: 30px;
+          }
+        }
+      }
+    }
+    .skills{
+      margin-top: 50px;
+      h3{
+        font-size: 50px;
+        color: $primary-color;
+        font-family: $font-eng;
+        font-weight: 900;
+      }
+      .skills-icon{
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        img{
+          border-radius: 5px;
         }
       }
     }

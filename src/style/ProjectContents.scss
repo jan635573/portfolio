@@ -1,0 +1,47 @@
+.project-contents{
+  background-color: #fff;
+  padding: 30px;
+  margin-top: 60px;
+  display: flex;
+  gap: 30px;
+  .project-txt{
+    font-family: $font-kor;
+    position: relative;
+    p{
+      font-size: $font-size-medium;
+    }
+    .tool{
+      display: flex;
+      flex-direction: row;
+      gap: 10px;
+      span{
+        background-color: $sub-color;
+        color: #fff;
+        padding: 5px 10px;
+        border-radius: 20px;
+      }
+    }
+    .sub-wrap{
+      position: absolute;
+      bottom: 10px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      p{
+        font-size: $font-size-small;
+      }
+    }
+    button{
+      font-family: $font-eng;
+      font-size: $font-size-large;
+      font-weight: 600;
+      width: 200px;
+      height: 60px;
+      background-color: $primary-color;
+      color: #fff;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+    }
+  }
+}

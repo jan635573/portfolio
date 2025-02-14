@@ -11,6 +11,10 @@
     left: 50%;
     width: 50px;
     transform: translateX(-50%);
+    animation-name: down;
+    animation-duration : 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate
   }
   .bg-img{
     width: 100%;
@@ -27,7 +31,7 @@
     p{
       position: relative;
       font-size: 200px;
-      font-family: "Outfit", 'Paperlogy-8ExtraBold';
+      font-family: $font-eng;
       font-weight: 900;
       color: #fff;
       letter-spacing: -0.3rem;
@@ -36,5 +40,19 @@
         z-index: 2;
       }
     }
+  }
+}
+
+@keyframes down{
+  0%{
+    opacity: 0.2;
+    transform: translateY(-10px);
+  }
+  50%{
+    opacity: 0.5;
+  }
+  100%{
+    opacity: 1;
+    transform: translateY(0);
   }
 }

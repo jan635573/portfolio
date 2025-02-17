@@ -11,6 +11,9 @@ nav{
   // font-size: $font-size-large;
   font-size: 2rem;
   z-index: 999;
+  @include responsive($breakpoint-small){
+    display: none;
+  }
   .nav-contents{
     width: 70%;
     line-height: 60px;

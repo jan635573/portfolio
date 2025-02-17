@@ -1,14 +1,40 @@
-import React from "react";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 const ProjectContents = () => {
+  var settings = {
+    slide: 'img',
+    dots: true,
+    arrow: false,
+    infinite: true,
+    // centerMode: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+  };
+
   return (
     <div className="project-contents">
-      <div className="project-img">
-        <img src="https://placehold.co/560x500"/>
+      <div className="container">
+        <Slider {...settings}>
+        <div>
+          <img src="https://placehold.co/560x500"/>
+        </div>
+        <div>
+          <img src="https://placehold.co/560x500"/>
+        </div>
+        <div>
+          <img src="https://placehold.co/560x500"/>
+        </div>
+        </Slider>
       </div>
+      {/* <div className="project-img">
+        <img src="https://placehold.co/560x500"/>
+      </div> */}
       <div className="project-txt">
         <h5>프로젝트1</h5>
-        <p>프로젝트 설명 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ac dignissim metus. Etiam fermentum, tortor sed interdum tincidunt, mauris ligula semper sem, eu porta lacus turpis a justo. Proin maximus euismod leo, vitae ornare augue sodales non.</p>
+        <p>프로젝트 설명 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ac dignissim metus. Etiam fermentum, tortor sed interdum tincidunt, mauris ligula semper sem, eu porta lacus turpis a justo. mauris ligula semper sem, eu porta lacus turpis a justo.</p>
         <div className="sub-wrap">
           <p><strong>제작 방식</strong></p>
           <div className="tool">

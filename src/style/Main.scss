@@ -21,13 +21,24 @@
     height: 50%;
     position: absolute;
     bottom: 0;
+    @include responsive($breakpoint-medium){
+      height: 60%;
+    }
+    @include responsive($breakpoint-small){
+      height: 70%;
+    }
   }
   .title-wrap{
     position: absolute;
     top: 45%;
     left: 50%;
     transform: translate(-50%,-50%);
-    line-height: 8rem;
+    @include responsive($breakpoint-medium){
+      top: 37%;
+    }
+    @include responsive($breakpoint-small){
+      top: 28%;
+    }
     p{
       position: relative;
       font-size: 200px;
@@ -35,6 +46,15 @@
       font-weight: 900;
       color: #fff;
       letter-spacing: -0.3rem;
+      line-height: 8rem;
+      @include responsive($breakpoint-medium){
+        font-size: 100px;
+        line-height: 4rem;
+      }
+      @include responsive($breakpoint-small){
+        font-size: 70px;
+        line-height: 2.5rem;
+      }
       &:nth-of-type(1){
         color: $sub-color;
         z-index: 2;

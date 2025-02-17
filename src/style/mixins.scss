@@ -1,0 +1,14 @@
+@mixin section_size{
+  width: 100%;
+  margin: 0 auto;
+}
+@mixin component_size{
+  width: 70%;
+  margin: 0 auto;
+  padding: 60px 0;
+}
+@mixin responsive($breakpoint){
+  @media screen and (max-width: $breakpoint) {
+    @content;
+  }
+}

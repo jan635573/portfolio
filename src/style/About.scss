@@ -1,11 +1,21 @@
 .about{
-  width: 100%;
+  @include section_size;
   height: 100vh;
-  margin: 0 auto;
   overflow: hidden;
+  @include responsive($breakpoint-medium){
+    height: 100%;
+  }
   .about-wrap{
-    width: 70%;
-    margin: 60px auto;
+    @include component_size;
+    @include responsive($breakpoint-medium){
+      width: 100%;
+      padding: 30px;
+    }
+    h2{
+      @include responsive($breakpoint-medium){
+        text-align: center;
+      }
+    }
     .about-me{
       // width: 90%;
       margin: 30px auto;
@@ -14,6 +24,11 @@
       align-items: start;
       gap: 2rem;
       font-family: $font-kor;
+      @include responsive($breakpoint-medium){
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
       .about-txt{
         display: flex;
         flex-direction: column;
@@ -23,12 +38,21 @@
           height: 5px;
           background-color: $primary-color;
           border: none;
+          @include responsive($breakpoint-medium){
+            width: 100%;
+          }
+          @include responsive($breakpoint-small){
+            width: 100%;
+          }
         }
         p{
           font-size: $font-size-small;
           &:nth-of-type(2){
             font-size: $font-size-medium;
             margin-top: 30px;
+            @include responsive($breakpoint-small){
+              text-align: start;
+            }
           }
         }
       }
@@ -46,8 +70,36 @@
         display: flex;
         align-items: center;
         gap: 20px;
+        flex-wrap: wrap;
         img{
           border-radius: 5px;
+        }
+      }
+    }
+  }
+}
+
+@include responsive($breakpoint-small){
+  .about{
+    height: 100%;
+    .about-wrap{
+      width: 100%;
+      padding: 30px;
+      h2{
+        font-size: 60px;
+        text-align: center;
+      }
+      .about-me{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        img{
+          width: 200px;
+        }
+        .about-txt{
+          width: 100%;
+          margin: 0 auto;
+          // text-align: center;
         }
       }
     }

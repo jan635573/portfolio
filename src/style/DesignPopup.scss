@@ -16,6 +16,10 @@
     height: 80%;
     padding: 40px 60px;
     position: relative;
+    @include responsive($breakpoint-medium){
+      width: 95%;
+      padding: 20px 40px;
+    }
     button{
       width: 40px;
       height: 40px;

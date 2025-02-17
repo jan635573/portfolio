@@ -1,14 +1,20 @@
 .project{
-  width: 100%;
-  // height: 200vh;
-  margin: 0 auto;
+  @include section_size;
   background-color: $primary-color;
   .project-wrap{
-    width: 70%;
-    margin: 0 auto;
-    padding: 60px 0;
+    @include component_size;
+    @include responsive($breakpoint-medium){
+      width: 100%;
+    }
     h2{
       color: $sub-color;
+      @include responsive($breakpoint-medium){
+        text-align: center;
+      }
+      @include responsive($breakpoint-small){
+        font-size: 60px;
+        text-align: center;
+      }
     }
   }
 }

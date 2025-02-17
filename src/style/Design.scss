@@ -1,19 +1,34 @@
 .design{
-  width: 100%;
+  @include section_size;
   height: 100vh;
-  margin: 0 auto;
   .design-wrap{
-    width: 70%;
-    margin: 0 auto;
-    padding: 60px 0;
+    @include component_size;
+    @include responsive($breakpoint-medium){
+      width: 100%;
+    }
+    h2{
+      @include responsive($breakpoint-medium){
+        text-align: center;
+      }
+      @include responsive($breakpoint-small){
+        font-size: 60px;
+        text-align: center;
+      }
+    }
     .gallery{
       display: grid;
       grid-template-columns: repeat(3,1fr);
       margin-top: 30px;
+      @include responsive($breakpoint-small){
+        grid-template-columns: repeat(1,1fr);
+      }
       div{
         background-color: #ddd;
         height: 330px;
         border: 1px solid $primary-color;
+        @include responsive($breakpoint-small){
+          height: 200px;
+        }
       }
     }
   }

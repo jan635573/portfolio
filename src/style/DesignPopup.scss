@@ -1,0 +1,44 @@
+.design-popup{
+  width: 100%;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background-color: rgba(0,0,0,0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  // z-index: 20;
+  .popup-wrap{
+    background-color: $primary-color;
+    width: 60%;
+    height: 80%;
+    padding: 40px 60px;
+    position: relative;
+    button{
+      width: 40px;
+      height: 40px;
+      position: absolute;
+      top: 30px;
+      right: 40px;
+      background: none;
+      color: #fff;
+      font-size: 4rem;
+      line-height: 1rem;
+      font-family: $font-kor;
+      font-weight: 100;
+    }
+    h5{
+      color: $sub-color;
+    }
+    p{
+      color: #fff;
+    }
+    .popup-image{
+      width: 100%;
+      background-color: #ddd;
+      height: 85%;
+    }
+  }
+}

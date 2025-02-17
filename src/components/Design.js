@@ -1,9 +1,11 @@
+import DesignPopup from "./DesignPopup";
 
 const Design = () => {
   return (
     <section className="design">
       <div className="design-wrap">
         <h2>DESIGN</h2>
+        {/* <DesignPopup /> */}
         <div className="gallery">
           <div>1</div>
           <div>2</div>

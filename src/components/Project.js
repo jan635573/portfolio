@@ -6,8 +6,6 @@ const Project = () => {
       <div className="project-wrap">
         <h2>PROJECT</h2>
         <ProjectContents />
-        <ProjectContents />
-        <ProjectContents />
       </div>
     </section>
   );

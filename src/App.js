@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import "./App.scss";
 import MenuBar from './components/MenuBar';
 import Main from './components/Main';
@@ -8,14 +8,16 @@ import Design from './components/Design';
 import ScrollTop from './components/ScrollTop';
 
 const App = () => {
+  const scrollRef = useRef([]);
+  
   return (
     <div>
       <ScrollTop />
-      <MenuBar />
-      <Main />
-      <About />
-      <Project />
-      <Design />
+      <MenuBar scrollRef={scrollRef}/>
+      <Main ref={scrollRef}/>
+      <About ref={scrollRef}/>
+      <Project ref={scrollRef}/>
+      <Design ref={scrollRef}/>
     </div>
   );
 };

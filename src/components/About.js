@@ -1,7 +1,8 @@
+import { forwardRef } from "react";
 
-const About = () => {
+const About = forwardRef((props, ref) => {
   return (
-    <section className="about">
+    <section className="about" ref={aboutRef => (ref.current[1] = aboutRef)}>
       <div className="about-wrap">
         <h2>ABOUT ME</h2>
         <div className="about-me">
@@ -26,6 +27,6 @@ const About = () => {
       </div>
     </section>
   );
-};
+});
 
 export default About;

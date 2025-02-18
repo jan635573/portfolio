@@ -9,7 +9,7 @@
     @include component_size;
     @include responsive($breakpoint-medium){
       width: 100%;
-      padding: 30px;
+      padding: 60px 30px;
     }
     h2{
       @include responsive($breakpoint-medium){

@@ -16,6 +16,12 @@
     animation-iteration-count: infinite;
     animation-direction: alternate
   }
+  .video-over{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(58, 84, 133, 0.8);
+  }
   .bg-img{
     width: 100%;
     height: 50%;
@@ -47,7 +53,8 @@
       color: #fff;
       letter-spacing: -0.3rem;
       line-height: 8rem;
-      @include responsive($breakpoint-medium){
+      animation: fadeIn 2s;
+      @include responsive($breakpoint-medium and 1150px){
         font-size: 100px;
         line-height: 4rem;
       }
@@ -74,5 +81,14 @@
   100%{
     opacity: 1;
     transform: translate(-50%,0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }

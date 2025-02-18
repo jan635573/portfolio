@@ -1,17 +1,16 @@
+import { forwardRef } from "react";
 import ProjectContents from "./ProjectContents";
 
-const Project = () => {
+const Project = forwardRef((props, ref) => {
   return (
-    <section className="project">
+    <section className="project" ref={projectRef => (ref.current[2] = projectRef)}>
       <div className="project-wrap">
         <h2>PROJECT</h2>
-        <ProjectContents />
-        <ProjectContents />
         <ProjectContents />
         <ProjectContents />
       </div>
     </section>
   );
-};
+});
 
 export default Project;

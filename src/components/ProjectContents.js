@@ -17,7 +17,7 @@ const ProjectContents = () => {
   return (
     <div className="project-contents">
       <div className="container">
-        <Slider {...settings}>
+        <Slider {...settings} dotsClass="dot-custom">
         <div>
           <img src="https://placehold.co/560x500"/>
         </div>

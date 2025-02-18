@@ -1,8 +1,9 @@
+import { forwardRef } from "react";
 import DesignPopup from "./DesignPopup";
 
-const Design = () => {
+const Design = forwardRef((props, ref) => {
   return (
-    <section className="design">
+    <section className="design" ref={designRef => (ref.current[3] = designRef)}>
       <div className="design-wrap">
         <h2>DESIGN</h2>
         {/* <DesignPopup /> */}
@@ -23,6 +24,6 @@ const Design = () => {
       </div>
     </section>
   );
-};
+});
 
 export default Design;

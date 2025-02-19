@@ -17,10 +17,11 @@ const Design = forwardRef((props, ref) => {
   return (
     <section className="design" ref={designRef => (ref.current[3] = designRef)}>
       <div className="design-wrap">
-        <h2>DESIGN</h2>
+        <h2>WORK</h2>
         <div className="gallery">
           {
             designData.map((list)=>{
+              console.log(list);
               return <div key={list.id} onClick={()=>{handleClick(list)}} className="gallery-contents">
                   <div className="design-cover">{list.title}</div>
                   <img src={list.mainImg} alt={list.title}/>

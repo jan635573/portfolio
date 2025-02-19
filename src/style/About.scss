@@ -20,7 +20,7 @@
       // width: 90%;
       margin: 30px auto;
       display: flex;
-      justify-content: center;
+      // justify-content: center;
       align-items: start;
       gap: 2rem;
       font-family: $font-kor;
@@ -28,6 +28,11 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+      }
+      img{
+        width: 300px;
+        height: 400px;
+        object-fit: contain;
       }
       .about-txt{
         display: flex;
@@ -50,11 +55,15 @@
           &:nth-of-type(2){
             font-size: $font-size-medium;
             margin-top: 30px;
+            word-break: keep-all;
             @include responsive($breakpoint-small){
               text-align: start;
             }
           }
         }
+        // .introduce{
+        //   width: 95%;
+        // }
       }
     }
     .skills{
@@ -96,9 +105,6 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        img{
-          width: 200px;
-        }
         .about-txt{
           width: 100%;
           margin: 0 auto;

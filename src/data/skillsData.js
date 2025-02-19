@@ -54,6 +54,11 @@ const skillsData = [
     name: 'Lightroom',
     icon: './images/about/skill-11.png'
   },
+  {
+    id: 12,
+    name: 'Sass',
+    icon: './images/about/skill-12.png'
+  },
 ];
 
 export default skillsData;

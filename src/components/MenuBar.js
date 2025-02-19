@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-const MenuNav = ['','ABOUT','PROJECT','DESIGN'];
+const MenuNav = ['','ABOUT','PROJECT','WORK'];
 
 const MenuBar = ({ scrollRef }) => {
   const [navIdx, setNavIdx] = useState(null);

@@ -2,7 +2,8 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-const ProjectContents = () => {
+const ProjectContents = ({projectData}) => {
+
   var settings = {
     slide: 'img',
     dots: true,
@@ -15,39 +16,40 @@ const ProjectContents = () => {
   };
 
   return (
-    <div className="project-contents">
+    <div className="project-contents" key={projectData.id}>
       <div className="container">
         <Slider {...settings} dotsClass="dot-custom">
         <div>
-          <img src="https://placehold.co/560x500"/>
+          <img src={projectData.img1} alt={projectData.name}/>
         </div>
         <div>
-          <img src="https://placehold.co/560x500"/>
+          <img src={projectData.img2} alt={projectData.name}/>
         </div>
         <div>
-          <img src="https://placehold.co/560x500"/>
+          <img src={projectData.img3} alt={projectData.name}/>
         </div>
         </Slider>
       </div>
-      {/* <div className="project-img">
-        <img src="https://placehold.co/560x500"/>
-      </div> */}
       <div className="project-txt">
-        <h5>프로젝트1</h5>
-        <p>프로젝트 설명 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ac dignissim metus. Etiam fermentum, tortor sed interdum tincidunt, mauris ligula semper sem, eu porta lacus turpis a justo. mauris ligula semper sem, eu porta lacus turpis a justo.</p>
-        <div className="sub-wrap">
-          <p><strong>제작 방식</strong></p>
-          <div className="tool">
-            <span>PhotoShop</span>
-            <span>HTML5</span>
-            <span>CSS</span>
-          </div>
-          <p><strong>레이아웃 제작 방식 : </strong><span>Flex 기반의 레이아웃</span></p>
-          <p><strong>플러그인 : </strong><span>Web Font</span></p>
-          <p><strong>작업 기여도 : </strong><span>100%(개인 프로젝트)</span></p>
-          <p><strong>제작 기간 : </strong><span>2일</span></p>
+        <div className="title-wrap">
+          <h5>{projectData.name}</h5>
+          <p>{projectData.detail}</p>
         </div>
-        <button>SITE VIEW</button>
+        <div className="sub-wrap">
+          <p><strong>사용 스킬</strong></p>
+          <div className="tool">
+            {
+              projectData.tools.map((list,idx)=>{
+                return <span key={idx}>{list}</span>
+              })
+            }
+          </div>
+          <p><strong>레이아웃 제작 방식 : </strong><span>{projectData.layout}</span></p>
+          <p><strong>플러그인 : </strong><span>{projectData.plugin}</span></p>
+          <p><strong>작업 기여도 : </strong><span>{projectData.contribution}</span></p>
+          <p><strong>제작 기간 : </strong><span>{projectData.period}</span></p>
+        </div>
+        <button><a href={projectData.url} target="_blank">SITE VIEW</a></button>
       </div>
     </div>
   );

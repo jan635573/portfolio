@@ -1,12 +1,16 @@
+import { useEffect } from "react";
 
-const DesignPopup = () => {
+const DesignPopup = ({info, onClose}) => {
+
   return (
     <div className="design-popup">
       <div className="popup-wrap">
-        <button>&times;</button>
-        <h5>제목</h5>
-        <p>간단 설명</p>
-        <div className="popup-image">이미지</div>
+        <button onClick={onClose}>&times;</button>
+        <h5>{info.title}</h5>
+        <p>{info.detail}</p>
+        <div className="popup-image">
+          <img src={info.mainImg} alt={info.title}/>
+        </div>
       </div>
     </div>
   );

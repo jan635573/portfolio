@@ -10,6 +10,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  box-shadow: 0 0 5px 0 rgba(0,0,0,0.2);
+  @include responsive($breakpoint-small){
+    display: none;
+  }
   cursor: pointer;
   img{
     width: 40px;

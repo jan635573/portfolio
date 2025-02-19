@@ -17,7 +17,7 @@ const App = () => {
       <Main ref={scrollRef}/>
       <About ref={scrollRef}/>
       <Project ref={scrollRef}/>
-      <Design ref={scrollRef}/>
+      <Design ref={scrollRef} />
     </div>
   );
 };

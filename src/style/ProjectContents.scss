@@ -5,7 +5,7 @@
   display: flex;
   flex-direction: row;
   gap: 30px;
-  @include responsive($breakpoint-medium and 1300px){
+  @include responsive($breakpoint-medium and 1600px){
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -36,14 +36,24 @@
   .project-txt{
     font-family: $font-kor;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     h5{
       margin-bottom: 10px;
+      white-space: pre-line;
+      @include responsive($breakpoint-small){
+        white-space: inherit;
+      }
     }
     p{
       font-size: $font-size-medium;
+      word-break: keep-all;
+      white-space: pre-line;
     }
     .tool{
       display: flex;
+      flex-wrap: wrap;
       flex-direction: row;
       gap: 10px;
       span{
@@ -58,6 +68,7 @@
       flex-direction: column;
       gap: 10px;
       margin-top: 30px;
+      margin-bottom: 80px;
       @include responsive($breakpoint-medium){
         position: relative;
         bottom: 0;
@@ -71,14 +82,27 @@
       font-family: $font-eng;
       font-size: $font-size-large;
       font-weight: 600;
-      width: 200px;
-      height: 60px;
+      line-height: 2.3rem;
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      // height: 60px;
       background-color: $primary-color;
       color: #fff;
-      // position: absolute;
-      // bottom: 0;
-      // right: 0;
-      margin: 30px 0;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      margin: 30px 20px;
+      transition: 0.3s;
+      @include responsive($breakpoint-small){
+        width: 100px;
+        height: 100px;
+        font-size: 2rem;
+        line-height: 2rem;
+      }
+      &:hover{
+        background-color: $sub-color;
+      }
     }
   }
 }

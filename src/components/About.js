@@ -1,4 +1,5 @@
 import { forwardRef } from "react";
+import skillsData from ".././data/skillsData";
 
 const About = forwardRef((props, ref) => {
   return (
@@ -17,11 +18,11 @@ const About = forwardRef((props, ref) => {
         <div className="skills">
           <h3>SKILLS</h3>
           <div className="skills-icon">
-            <img src="https://placehold.co/90"/>
-            <img src="https://placehold.co/90"/>
-            <img src="https://placehold.co/90"/>
-            <img src="https://placehold.co/90"/>
-            <img src="https://placehold.co/90"/>
+            {
+              skillsData.map((list)=>{
+                return <img key={list.id} src={list.icon} alt={list.name}/>
+              })
+            }
           </div>
         </div>
       </div>

@@ -1,26 +1,36 @@
-import { forwardRef } from "react";
+import { forwardRef, useState } from "react";
 import DesignPopup from "./DesignPopup";
+import designData from ".././data/designData";
 
 const Design = forwardRef((props, ref) => {
+  const [selected,setSelected] = useState(null);
+  const [isModalOpen,setIsModalOpen] = useState(false);
+
+  const handleClick = (info) => {
+    setSelected(info);
+    setIsModalOpen(true);
+  }
+  const handleClose = () => {
+    setSelected(null);
+    setIsModalOpen(false);
+  }
   return (
     <section className="design" ref={designRef => (ref.current[3] = designRef)}>
       <div className="design-wrap">
         <h2>DESIGN</h2>
-        {/* <DesignPopup /> */}
         <div className="gallery">
-          <div>1</div>
-          <div>2</div>
-          <div>3</div>
-          <div>4</div>
-          <div>5</div>
-          <div>6</div>
-          <div>7</div>
-          <div>8</div>
-          <div>9</div>
-          <div>10</div>
-          <div>11</div>
-          <div>12</div>
+          {
+            designData.map((list)=>{
+              return <div key={list.id} onClick={()=>{handleClick(list)}} className="gallery-contents">
+                  <div className="design-cover">{list.title}</div>
+                  <img src={list.mainImg} alt={list.title}/>
+                </div>
+            })
+          }
         </div>
+        {
+          isModalOpen && <DesignPopup info={selected} onClose={handleClose}/>
+        }
       </div>
     </section>
   );

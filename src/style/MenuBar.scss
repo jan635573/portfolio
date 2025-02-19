@@ -10,7 +10,7 @@ nav{
   color: #fff;
   // font-size: $font-size-large;
   font-size: 2rem;
-  z-index: 999;
+  z-index: 10;
   @include responsive($breakpoint-small){
     display: none;
   }

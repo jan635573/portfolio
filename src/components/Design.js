@@ -21,7 +21,6 @@ const Design = forwardRef((props, ref) => {
         <div className="gallery">
           {
             designData.map((list)=>{
-              console.log(list);
               return <div key={list.id} onClick={()=>{handleClick(list)}} className="gallery-contents">
                   <div className="design-cover">{list.title}</div>
                   <img src={`${process.env.PUBLIC_URL}${list.mainImg}`} alt={list.title}/>

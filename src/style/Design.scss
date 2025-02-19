@@ -41,6 +41,9 @@
         &:hover > .design-cover{
           opacity: 1;
         }
+        &:hover > img{
+          transform: scale(1.2);
+        }
         .design-cover{
           width: 100%;
           height: 100%;
@@ -55,11 +58,13 @@
           font-size: $font-size-medium;
           opacity: 0;
           transition: 0.5s;
+          z-index: 2;
         }
         img{
           width: 100%;
           height: 330px;
           object-fit: cover;
+          transition: 0.5s;
           @include responsive($breakpoint-small){
             object-position: top;
           }

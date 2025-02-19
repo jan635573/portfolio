@@ -20,13 +20,13 @@ const ProjectContents = ({projectData}) => {
       <div className="container">
         <Slider {...settings} dotsClass="dot-custom">
         <div>
-          <img src={projectData.img1} alt={projectData.name}/>
+          <img src={`${process.env.PUBLIC_URL}${projectData.img1}`} alt={projectData.name}/>
         </div>
         <div>
-          <img src={projectData.img2} alt={projectData.name}/>
+          <img src={`${process.env.PUBLIC_URL}${projectData.img2}`} alt={projectData.name}/>
         </div>
         <div>
-          <img src={projectData.img3} alt={projectData.name}/>
+          <img src={`${process.env.PUBLIC_URL}${projectData.img3}`} alt={projectData.name}/>
         </div>
         </Slider>
       </div>

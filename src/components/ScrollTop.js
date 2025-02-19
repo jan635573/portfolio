@@ -25,7 +25,9 @@ const ScrollTop = () => {
   return (
     <div>
       {
-        showBtn && <button className="scroll-top" onClick={handleTop}><img src="./images/scrolltop.svg"/></button>
+        showBtn && <button className="scroll-top" onClick={handleTop}>
+          <img src={`${process.env.PUBLIC_URL}/images/scrolltop.svg`} alt="top 버튼"/>
+          </button>
       }
     </div>
   );

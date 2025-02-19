@@ -12,7 +12,6 @@ const Project = forwardRef((props, ref) => {
             return <ProjectContents projectData={projectData} key={projectData.id}/>
           })
         }
-        {/* <ProjectContents /> */}
       </div>
     </section>
   );

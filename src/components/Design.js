@@ -24,7 +24,7 @@ const Design = forwardRef((props, ref) => {
               console.log(list);
               return <div key={list.id} onClick={()=>{handleClick(list)}} className="gallery-contents">
                   <div className="design-cover">{list.title}</div>
-                  <img src={list.mainImg} alt={list.title}/>
+                  <img src={`${process.env.PUBLIC_URL}${list.mainImg}`} alt={list.title}/>
                 </div>
             })
           }

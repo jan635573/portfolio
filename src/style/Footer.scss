@@ -1,0 +1,20 @@
+.footer{
+  width: 100%;
+  height: 50px;
+  margin: 0 auto;
+  background-color: #fff;
+  color: $primary-color;
+  font-family: $font-eng;
+  .footer-wrap{
+    width: 70%;
+    height: 50px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include responsive($breakpoint-medium){
+      width: 100%;
+      flex-direction: column;
+    }
+  }
+}

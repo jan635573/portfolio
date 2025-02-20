@@ -6,6 +6,7 @@ import About from './components/About';
 import Project from './components/Project';
 import Design from './components/Design';
 import ScrollTop from './components/ScrollTop';
+import Footer from './components/Footer';
 
 const App = () => {
   const scrollRef = useRef([]);
@@ -18,6 +19,7 @@ const App = () => {
       <About ref={scrollRef}/>
       <Project ref={scrollRef}/>
       <Design ref={scrollRef} />
+      <Footer />
     </div>
   );
 };

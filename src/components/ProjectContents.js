@@ -1,19 +1,41 @@
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { GoChevronLeft,GoChevronRight } from "react-icons/go";
 
 const ProjectContents = ({projectData}) => {
 
   var settings = {
     slide: 'img',
     dots: true,
-    arrow: false,
+    arrow: true,
+    nextArrow: <SampleNextArrow />,
+    prevArrow: <SamplePrevArrow />,
     infinite: true,
     // centerMode: true,
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
   };
+  function SampleNextArrow(props) {
+    const { onClick } = props;
+    return (
+      <div
+        className="slick_next"
+        onClick={onClick}
+      ><GoChevronRight /></div>
+    );
+  }
+  
+  function SamplePrevArrow(props) {
+    const { onClick } = props;
+    return (
+      <div
+        className="slick_prev"
+        onClick={onClick}
+      ><GoChevronLeft /></div>
+    );
+  }
 
   return (
     <div className="project-contents" key={projectData.id}>

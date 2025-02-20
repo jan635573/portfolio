@@ -2,7 +2,7 @@
   @include section_size;
   height: 100vh;
   overflow: hidden;
-  @include responsive($breakpoint-medium){
+  @include responsive($breakpoint-medium and 1780px){
     height: 100%;
   }
   .about-wrap{
@@ -53,11 +53,16 @@
         p{
           font-size: $font-size-small;
           &:nth-of-type(2){
+            width: 90%;
             font-size: $font-size-medium;
-            margin-top: 30px;
-            word-break: keep-all;
+            color: $primary-color;
+            margin-top: 20px;
+            word-break: break-all;
             @include responsive($breakpoint-small){
+              width: 100%;
               text-align: start;
+              font-size: $font-size-small;
+              word-break: keep-all;
             }
           }
         }
@@ -80,11 +85,18 @@
         align-items: center;
         gap: 15px;
         flex-wrap: wrap;
+        @include responsive($breakpoint-small){
+          justify-content: center;
+        }
         img{
           width: 90px;
           height: 90px;
           border-radius: 5px;
           box-shadow: 0 0 5px 0 rgba(0,0,0,0.3);
+          @include responsive($breakpoint-small){
+            width: 60px;
+            height: 60px;
+          }
         }
       }
     }

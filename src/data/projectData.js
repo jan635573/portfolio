@@ -44,7 +44,7 @@ const projectData = [
   {
     id: 4,
     name: 'Netflix Clone - React 기반의 웹 구현',
-    detail: 'Netfilx 메인 페이지의 주요 기능을 모방하여 React를 활용한 웹 애플리케이션을 개발하였습니다.\nUI/UX 구현 능력, 비동기 데이터 처리를 강조하였고 사용자 편의성을 위해 반응형으로 제작되었습니다.',
+    detail: 'Netflix 메인 페이지의 주요 기능을 모방하여 React를 활용한 웹 애플리케이션을 개발하였습니다.\nUI/UX 구현 능력, 비동기 데이터 처리를 강조하였고 사용자 편의성을 위해 반응형으로 제작되었습니다.',
     tools: ['React', 'React Router', 'TMDB API 연동', 'SCSS'],
     layout: 'Flex 기반의 레이아웃',
     plugin: 'Axios, react-slick, scss',

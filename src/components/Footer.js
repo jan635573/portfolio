@@ -6,7 +6,8 @@ const Footer = () => {
       <div className='footer-wrap'>
         {/* <span>DAM</span> */}
         <span>ⓒ2025. DAM All rights reserved.</span>
-        <span>CONTACT : uidamj25@gmail.com</span>
+        {/* <span>https://github.com/jan635573</span> */}
+        <span><a href='https://github.com/jan635573' target='_blank'>https://github.com/jan635573</a> | uidamj25@gmail.com</span>
       </div>
     </div>
   );

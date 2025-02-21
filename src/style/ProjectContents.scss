@@ -62,7 +62,7 @@
       flex-direction: row;
       gap: 10px;
       span{
-        background-color: $sub-color;
+        background-color: $primary-color;
         color: #fff;
         padding: 5px 10px;
         border-radius: 20px;
@@ -190,6 +190,10 @@
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  transition: 0.1s;
+  &:hover{
+    background-color: $sub-color;
+  }
 }
 .slick_prev{
   right: 40px;

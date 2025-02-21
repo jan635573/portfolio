@@ -10,7 +10,8 @@
     height: 50px;
     margin: 0 auto;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
     @include responsive($breakpoint-medium){
       width: 100%;

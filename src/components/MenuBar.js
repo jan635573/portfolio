@@ -3,6 +3,8 @@ const MenuNav = ['','ABOUT','PROJECT','WORK'];
 
 const MenuBar = ({ scrollRef }) => {
   const [navIdx, setNavIdx] = useState(null);
+  const [showNav, setShowNav] = useState(true);
+  const [lastScrollY,setLastScrollY] = useState(0);
   const navRef = useRef([]);
 
   useEffect(()=>{
@@ -27,8 +29,22 @@ const MenuBar = ({ scrollRef }) => {
     }
   },[scrollRef]);
 
+  useEffect(()=>{
+    const handleScroll = () => {
+      const currentScrollY = window.screenY;
+      if(currentScrollY > lastScrollY){
+        setShowNav(false);
+      } else{
+        setShowNav(true);
+      }
+      setLastScrollY(currentScrollY);
+    };
+    window.addEventListener("scroll",handleScroll);
+    return () => window.removeEventListener("scroll",handleScroll);
+  },[lastScrollY]);
+
   return (
-    <nav>
+    <nav className={`${showNav ? '' : 'nav-hide'}`}>
       <div className="nav-contents">
         <h1><a href="#">DAM</a></h1>
         <ul>

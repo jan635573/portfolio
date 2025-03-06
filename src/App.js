@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import "./App.scss";
 import MenuBar from './components/MenuBar';
 import Main from './components/Main';
@@ -10,9 +10,16 @@ import Footer from './components/Footer';
 
 const App = () => {
   const scrollRef = useRef([]);
-  
+  const [coord, setCoord] = useState({clientX:0, clientY:0});
+  const mouseMove = (event) => {
+    const mouseX = event.clientX;
+    const mouseY = event.clientY;
+    setCoord({clientX:mouseX, clientY:mouseY});
+  }
+
   return (
-    <div>
+    <div className='app' onMouseMove={mouseMove}>
+      <div className='pointer' style={{transform: `translate(${coord.clientX}px, ${coord.clientY}px)`}}></div>
       <ScrollTop />
       <MenuBar scrollRef={scrollRef}/>
       <Main ref={scrollRef}/>

@@ -71,7 +71,7 @@ const ProjectContents = ({projectData}) => {
           <p><strong>작업 기여도 : </strong><span>{projectData.contribution}</span></p>
           <p><strong>제작 기간 : </strong><span>{projectData.period}</span></p>
         </div>
-        <button><a href={projectData.url} target="_blank">SITE VIEW</a></button>
+        <button className="site-btn"><a href={projectData.url} target="_blank">SITE VIEW</a></button>
       </div>
     </div>
   );

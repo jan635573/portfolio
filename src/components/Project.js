@@ -3,6 +3,7 @@ import ProjectContents from "./ProjectContents";
 import projectData from ".././data/projectData";
 
 const Project = forwardRef((props, ref) => {
+
   return (
     <section className="project" ref={projectRef => (ref.current[2] = projectRef)}>
       <div className="project-wrap">

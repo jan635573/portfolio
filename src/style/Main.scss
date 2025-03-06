@@ -57,7 +57,7 @@
       color: #fff;
       letter-spacing: -0.3rem;
       line-height: 8rem;
-      animation: fadeIn 2s;
+      // animation: fadeIn 2s;
       @include responsive($breakpoint-medium and 1150px){
         font-size: 100px;
         line-height: 4rem;

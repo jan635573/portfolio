@@ -9,7 +9,7 @@ const designData = [
   {
     id:2,
     title: 'Mockup & 카드 뉴스',
-    detail: 'Design | 환경 보호 캠페인 카드 뉴스와 인스타그램 페이지 Mockup',
+    detail: 'Design | 환경 보호 캠페인 카드 뉴스와 SNS 페이지 Mockup',
     mainImg: '/images/design/work2-1.jpg',
     detailImg: '/images/design/work2-2.jpg',
   },
@@ -82,6 +82,48 @@ const designData = [
     detail: 'Animation | CSS Animation을 이용한 프로그레스 바',
     mainImg: '/images/design/work12-1.jpg',
     detailImg: '/images/design/work12-2.webp',
+  },
+  {
+    id:13,
+    title: 'fullPage 웹',
+    detail: 'Design, JQuery | JQuery를 활용한 상품 홍보 fullPage 웹',
+    mainImg: '/images/design/work13-1.jpg',
+    detailImg: '/images/design/work13-2.webp',
+  },
+  {
+    id:14,
+    title: '모바일 APP UI',
+    detail: 'Design | 날씨, 기온별 옷차림 추천 모바일 애플리케이션 기획 및 UI 디자인',
+    mainImg: '/images/design/work14-1.jpg',
+    detailImg: '/images/design/work14-1.jpg',
+  },
+  {
+    id:15,
+    title: '명함 디자인',
+    detail: 'Design | 반려견 동반 수영장 명함 디자인',
+    mainImg: '/images/design/work15-1.jpg',
+    detailImg: '/images/design/work15-1.jpg',
+  },
+  {
+    id:16,
+    title: '은행 카드 디자인',
+    detail: 'Design | 여행을 컨셉으로 한 은행 카드 디자인',
+    mainImg: '/images/design/work16-1.jpg',
+    detailImg: '/images/design/work16-1.jpg',
+  },
+  {
+    id:17,
+    title: '스마트폰 케이스',
+    detail: 'Design | 스마트폰 케이스 디자인',
+    mainImg: '/images/design/work17-1.jpg',
+    detailImg: '/images/design/work17-1.jpg',
+  },
+  {
+    id:18,
+    title: '스마트폰 케이스',
+    detail: 'Design | 스마트폰 케이스 디자인',
+    mainImg: '/images/design/work18-1.jpg',
+    detailImg: '/images/design/work18-1.jpg',
   },
 ];
 

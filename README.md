@@ -24,7 +24,7 @@
 - **디자인** : Figma
 - **프레임워크** : React
 - **프론트엔드 개발** : React, SCSS
-- **플러그인** : react-slick, slick-carousel, react-icons, SCSS, Web Font
+- **플러그인** : react-slick, slick-carousel, react-icons, SCSS, Web Font, GSAP, AOS
 
 ### 6. 제작 참여율
 - 개인 프로젝트(100%)로 진행
@@ -37,4 +37,4 @@
 ### 2. 향후 개선 계획
 1. 다크 모드 지원
 2. 접근성 가이드라인(WCAG) 준수를 위한 추가 개선
-3. project 사용 영상 첨부
+3. Modal 창 바깥 클릭시 창 닫히게 구현

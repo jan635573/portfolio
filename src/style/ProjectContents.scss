@@ -42,6 +42,7 @@
     h5{
       margin-bottom: 10px;
       white-space: pre-line;
+      word-break: keep-all;
       @include responsive($breakpoint-small){
         font-size: $font-size-medium;
         white-space: inherit;

@@ -97,6 +97,20 @@ const projectData = [
     img2: '/images/project/project7-2.jpg',
     img3: '/images/project/project7-3.jpg',
   },
+  {
+    id: 8,
+    name: 'WAY 영양제 판매 사이트 - JSP 기반의 웹 구현',
+    detail: 'WAY라는 이름의 가상 영양제 판매 사이트를 기획하고 JSP를 기반으로 웹 표준을 준수하여 개발하였습니다.\n쇼핑몰 형태의 웹 사이트로 장바구니, 주문, 주문 확인 등의 기본적인 기능과 함께 사용자 맞춤형 추천 기능도 구현하여 제작하였습니다.\n사용자 편의성을 위해 반응형으로 제작되었으며, 팀 프로젝트로 진행되어 기획, 사이트 전반의 디자인, 이미지 편집, 제작, 자료 조사 및 구성 등에 참여하였습니다.',
+    tools: ['Photoshop', 'Adobe XD', 'JSP', 'HTML5', 'CSS3', 'ES6', 'MySQL', ' Swiper 라이브러리', 'kakaoPay 결제 API 연동'],
+    layout: 'JSP, HTML5 기반의 레이아웃',
+    plugin: 'Web Font',
+    contribution: '32% (팀 프로젝트)',
+    period: '4개월(2023년 제작)',
+    url: 'https://drive.google.com/file/d/1snvsR6ixk8HazKRx91DMhRPzIErdv5X4/view?usp=sharing',
+    img1: '/images/project/project8-1.jpg',
+    img2: '/images/project/project8-2.jpg',
+    img3: '/images/project/project8-3.jpg',
+  },
 ];
 
 export default projectData;

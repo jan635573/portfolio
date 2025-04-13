@@ -2,8 +2,15 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { GoChevronLeft,GoChevronRight } from "react-icons/go";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 const ProjectContents = ({projectData}) => {
+
+    useEffect(() => {
+      AOS.init();
+    },[])
 
   var settings = {
     slide: 'img',
@@ -38,7 +45,7 @@ const ProjectContents = ({projectData}) => {
   }
 
   return (
-    <div className="project-contents" key={projectData.id}>
+    <div className="project-contents" key={projectData.id} data-aos="fade-up" data-aos-duration="700">
       <div className="container">
         <Slider {...settings} dotsClass="dot-custom">
         <div>

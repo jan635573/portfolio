@@ -60,7 +60,7 @@
             font-size: $font-size-medium;
             color: $primary-color;
             margin-top: 20px;
-            word-break: break-all;
+            word-break: keep-all;
             @include responsive($breakpoint-small){
               width: 100%;
               text-align: start;
